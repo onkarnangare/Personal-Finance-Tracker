@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>User Transactions</h2>
+  <p class="user-id">User ID: {{ userId }}, User Name:{{username}}</p>
+
+  <div *ngIf="transactions.length > 0; else noTransactions">
+    <table class="transaction-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Transaction Type</th>
+          <th>Amount</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of transactions; index as i">
+          <td>{{ i + 1 }}</td>
+          <td>{{ transaction.type }}</td>
+          <td>{{ transaction.amount }}</td>
+          <td>{{ transaction.date | date: 'short' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ng-template #noTransactions>
+    <p>No transactions available</p>
+  </ng-template>
+</div>

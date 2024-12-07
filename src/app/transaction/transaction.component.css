@@ -1,0 +1,65 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-id {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.transaction-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.transaction-table td {
+  font-size: 14px;
+  color: #555;
+}
+
+.transaction-table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.transaction-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}
